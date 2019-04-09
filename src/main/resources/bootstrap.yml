@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: lgmn-gateway
+  cloud:
+    nacos:
+      config:
+        server-addr: nacos-standalone-mysql:8848
+        ext-config:
+          - data-id: gateway.yaml
+            refresh: true
